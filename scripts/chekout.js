@@ -18,7 +18,8 @@ cart.forEach((cartItem)=>{
 //    console.log(matchingProduct);
 
   cartSummaryHtml +=  `
-    <div class="cart-item-container">
+    <div class="cart-item-container 
+    js-cart-item-container-${matchingProduct.id}">
             <div class="delivery-date">
               Delivery date: Tuesday, June 21
             </div>
@@ -107,6 +108,15 @@ document.querySelectorAll(".js-delete-link").forEach((link)=>{
        const productId = link.dataset.productId;
       //  console.log(productId);
        removeFromCart(productId);
-       console.log(cart);
-    });
+       // this will remove product from cart only 
+      //  console.log(cart);
+
+       //To remove product from page 
+       // 1. use dom to get the element
+       // 2. use element.remove() method
+       const container = document.querySelector(`.js-cart-item-container-${productId}`);
+      //  console.log(container);
+      container.remove();
+
+      });
 });
