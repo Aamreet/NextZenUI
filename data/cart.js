@@ -1,4 +1,4 @@
-export const cart = [{
+export let cart = [{
     productId: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",// we are not saving image of pdt or other details in cart because using the productd we will search the product form products
     // this technique is known as de-duplicating or normalizing the data
     quantity:  2
@@ -27,4 +27,20 @@ export function addToCart(productId){
             quantity: 1
         });
     }
+}
+ 
+export function removeFromCart(productId){
+   //steps
+   //1. create a new array
+   //2. Loop through the cart 
+   //3. Add each product to the new array, except for this productId
+   const newCart = [];
+
+   cart.forEach((cartItem)=>{
+       if(cartItem.productId !== productId){
+              newCart.push(cartItem);
+       }
+   });
+
+   cart = newCart;
 }
