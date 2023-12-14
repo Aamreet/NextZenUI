@@ -2,6 +2,21 @@ import {cart, removeFromCart} from "../data/cart.js";
 import {products} from "../data/products.js";
 import { formatCurrency } from "./utils/money.js";
 
+
+// console.log(dayjs());
+
+const today = dayjs();
+
+const deliveryDate = today.add(7, "days");
+// .add(no of time we want to add, lenght of time we want to add)
+console.log(deliveryDate);
+// in deliveryDate object for $d: we will get date 7 days after the date you enter the website
+
+console.log(deliveryDate.format('dddd, MMMM D'));
+//dddd-> replace it with day of the week
+// MMMM -> replace it with month 
+// D -> date
+
 let cartSummaryHtml = " ";
 
 cart.forEach((cartItem)=>{
