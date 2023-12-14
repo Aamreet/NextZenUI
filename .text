@@ -29,3 +29,9 @@ in this chapter
   ESM Version
    ESM- EcmaScript Module 
    A version that works with js modules
+
+   Default Export 
+    - another way of exporting
+    - we can use it when we only want to export 1 thing 
+    - In a file only one default export is possible 
+    - It increases the readability
