@@ -1,37 +1,4 @@
-in this chapter
-     1. External Libraries
-           code that is outside of our project
-             we can use script tag to put this code in our code
+// in previous part we were updating the changes in the page at runtime using dom which is good but if we to update a lot of things using dom it will update it one by one 
+    ex -> if you change the delivery option it will be updated in order-summary and also in payment-summary it will be updated one by one using dom and we have to reload the page to
 
-            why we use External Libraries
-             - let us share code
-             - save time
-             - avoid duplicating work 
-
-             Dayjs to deal with dates
-     2. complete checkout page
-
-
- Best Practice 
-  When we need something complicated,
-   - Try to find an external library first.
-   - Before writing the code ourselves 
-
- How to find external  library
-  - search google like <prgraming language > External library for< type or work of library>   
-    Ex -> js library for adding date in our page
-  - search in any of the ai tool
-
-  Problem with loading js through script tag
-   - because script tag will load the code in page without wrapping it we can have name conflicts 
-   - but if we load it using js modules then this module will contain this external library inside a file so variable and functions inside a file will not conflict with anything outside of it           
-
-  ESM Version
-   ESM- EcmaScript Module 
-   A version that works with js modules
-
-   Default Export 
-    - another way of exporting
-    - we can use it when we only want to export 1 thing 
-    - In a file only one default export is possible 
-    - It increases the readability
+// Now to update the page instead of using the dom we will rerun  all the code which will regernate all the html
