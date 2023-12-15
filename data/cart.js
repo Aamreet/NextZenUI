@@ -37,7 +37,7 @@ export function addToCart(productId){
         cart.push({
             productId: productId,
             quantity: 1,
-             deliveryOptionsId: '1' // for new pdts the default deliveryOptionsId is 1 
+             deliveryOptionId: '1' // for new pdts the default deliveryOptionsId is 1 
         });
     }
     saveToStorage();
@@ -71,6 +71,7 @@ export function updateDeliveryOption(productId, deliveryOptionId){
     });
 
     matchingItem.deliveryOptionId = deliveryOptionId;
+    // although matchingItem is a different object but because in js object refer to same address thatswhy it is affecting cart object directly
 
     saveToStorage();
 }

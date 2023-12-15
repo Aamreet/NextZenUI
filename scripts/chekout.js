@@ -38,11 +38,11 @@ cart.forEach((cartItem)=>{
       }
    });
 
-//    console.log(matchingProduct);
+  //  console.log(matchingProduct);
 
- const deliveryOptionId = cartItem.deliveryOptionId;
- 
- let deliveryOption;
+   const deliveryOptionId = cartItem.deliveryOptionId;
+  // console.log(deliveryOptionId);
+   let deliveryOption;
 
  deliveryOptions.forEach((option)=>{
       if(option.id === deliveryOptionId){
@@ -50,7 +50,7 @@ cart.forEach((cartItem)=>{
       }
  });
 
- console.log(deliveryOption);
+//  console.log(deliveryOption);
  const today = dayjs();
  const deliveryDate = today.add(
     deliveryOption.deliveryDays, 'days'
@@ -58,7 +58,7 @@ cart.forEach((cartItem)=>{
  const dateString = deliveryDate.format(
    'dddd, MMMM D'
  ); 
-
+//  console.log(dateString);
 
 
  cartSummaryHtml +=  `
