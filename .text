@@ -23,3 +23,7 @@
            mvc is a design pattern as it is a way to organize and design our code
                  many modern web devlopment frameworks use mvc design pattern ex express genrator 
       
+// Main idea of js
+    1. Save the data (Model)
+    2. Generate the html (View)
+    3. Make it interactive (Controller)
