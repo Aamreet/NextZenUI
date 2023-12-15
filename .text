@@ -2,3 +2,24 @@
     ex -> if you change the delivery option it will be updated in order-summary and also in payment-summary it will be updated one by one using dom and we have to reload the page to
 
 // Now to update the page instead of using the dom we will rerun  all the code which will regernate all the html
+  
+    The above technique is called MVC (Model - View - Controller)
+      1. Update the data
+      2. Regenerate all the HTML
+
+      MVC 
+      split our code in 3 parts
+       1. Model= All the code that saves and manages the data 
+                Ex all the code in our data folder is Model
+       
+       2. View = takes the data and displays it on the page
+                    ex all the files in scripts folder because the take the data and genrate html
+       
+       3. Controller = runs some code when we interact with the page
+                        ex  eventlistners in our code because they do something when we interact with the page or view
+
+           make note of this timestamp -> mvc working - 1:02:40 (How mvc work in loop)
+        
+           mvc is a design pattern as it is a way to organize and design our code
+                 many modern web devlopment frameworks use mvc design pattern ex express genrator 
+      
