@@ -1,4 +1,4 @@
-import { formatCurrency} from '../scripts/utils/money.js';
+import { formatCurrency} from '../../scripts/utils/money.js';
 
 describe('Test Suit: Format Currency', ()=>{
    describe('Test 1: Format of any number', ()=>{
